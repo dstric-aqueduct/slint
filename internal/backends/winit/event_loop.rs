@@ -300,6 +300,7 @@ impl winit::application::ApplicationHandler<SlintUserEvent> for EventLoopState {
         window_id: winit::window::WindowId,
         event: WindowEvent,
     ) {
+        // println!("{:?}", &event);
         let Some(window) = window_by_id(window_id) else {
             return;
         };
